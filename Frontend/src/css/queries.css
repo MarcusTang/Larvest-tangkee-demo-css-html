@@ -1,0 +1,225 @@
+/*
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+*/
+
+/************************/
+/*BELOW 1275px(Samaller desktops)*/
+/************************/
+
+@media (max-width: 82em) {
+  .main-nav-link:link,
+  .main-nav-link:visited,
+  .main-menu-link:link {
+    font-size: 1.6rem;
+  }
+  .sub-menu-link:link,
+  .sub-menu-link:visited {
+    font-size: 1.4rem;
+  }
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-secondary-facilities {
+    font-size: 3.6rem;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+}
+
+/************************/
+/*BELOW 1215px(landsacpe tablets)*/
+/************************/
+@media (max-width: 76em) {
+  html {
+    font-size: 56.25%;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited,
+  .main-menu-link:link {
+    font-size: 1.4rem;
+  }
+  .sub-menu-link:link,
+  .sub-menu-link:visited {
+    font-size: 1.2rem;
+  }
+}
+
+/************************/
+/*BELOW 1056px*/
+/************************/
+
+@media (max-width: 66em) {
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+}
+
+/************************/
+/*BELOW 1010px*/
+/************************/
+
+@media (max-width: 64em) {
+  .main-nav-link:link,
+  .main-nav-link:visited,
+  .main-menu-link:link {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .sub-menu-link:link,
+  .sub-menu-link:visited {
+    font-size: 1rem;
+  }
+  .heading-secondary-facilities {
+    font-size: 3.2rem;
+  }
+  .heading-secondary {
+    font-size: 3.2rem;
+  }
+}
+
+/************************/
+/*BELOW 944px (Tablets)*/
+/************************/
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  /*MOBILE NAVIGATION*/
+  .btn-moblie-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /*Hide Navigation*/
+    /*Allows No transition at all*/
+    /* display: none; */
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .sub-menu {
+    /* display: block; */
+    width: 35%;
+    height: 30%;
+    background-color: rgba(255, 255, 255, 1);
+    transform: translateY(1rem);
+    text-align: center;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited,
+  .main-menu-link:link {
+    font-size: 3rem;
+  }
+  .sub-menu-link:link,
+  .sub-menu-link:visited {
+    font-size: 2.5rem;
+  }
+}
+
+/************************/
+/*BELOW 798px */
+/************************/
+@media (max-width: 50em) {
+  .facilities-imgs-box {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0rem;
+  }
+  .facilities-description {
+    line-height: 2.7;
+    font-weight: 600;
+  }
+
+  .step-number {
+    font-size: 7.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/**************************/
+/* BELOW 700px */
+/**************************/
+
+@media (max-width: 44em) {
+  .heading-secondary-facilities {
+    font-size: 3rem;
+  }
+  .heading-secondary {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+@media (max-width: 34em) {
+}

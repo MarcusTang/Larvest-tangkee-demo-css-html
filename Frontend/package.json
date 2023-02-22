@@ -1,0 +1,15 @@
+{
+  "name": "larvest-tangkee",
+  "version": "1.0.0",
+  "description": "Produts and Introduce",
+  "defalut": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Marcus Tang",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
